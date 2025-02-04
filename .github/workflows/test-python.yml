@@ -40,6 +40,6 @@ jobs:
         -   name: Run SSH commands on EC2
             run: |
               ssh ec2-user@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
-                echo "Hello johnreygoh"
+                echo "Hello EC2"
                 uname -a
               EOF
